@@ -1,0 +1,37 @@
+ONLINE FOOD DELIVERY ANALYSIS
+End-to-End Data Analytics Project (Python + SQL + Power BI)
+
+1. INTRODUCTION
+This project presents an end-to-end data analytics workflow involving data cleaning, exploratory data analysis (EDA), feature engineering, and visualization. The objective is to analyze online food delivery data and extract meaningful business insights related to customer behavior, order trends, and operational performance.
+
+2. DATA CLEANING (PYTHON)
+Data preprocessing was performed to ensure accuracy and consistency of the dataset.
+Key cleaning steps:
+Missing numerical values were replaced using median values
+Missing categorical values were replaced with mode (most frequent value)
+Text data was standardized by removing extra spaces and inconsistencies
+Ratings exceeding 5 were capped at 5 to maintain logical validity
+Negative profit values were corrected
+Delivery ratings for cancelled orders were removed
+Outliers were identified and handled
+
+3. FEATURE ENGINEERING
+New features were created to enhance analysis:
+Extraction of order date and time fields
+Attempted creation of peak hour feature; however, all Order_Time values were recorded as 00:00:00, making hourly analysis infeasible
+Profit margin feature was derived
+Delivery performance metrics were created
+Customer age groups were categorized
+
+4. EXPLORATORY DATA ANALYSIS (EDA)
+EDA was conducted to identify trends and patterns:
+Summary statistics of dataset
+City-wise order analysis
+Cuisine preference analysis
+Cancellation reason analysis
+Correlation analysis between variables
+Delivery distance and delivery time analysis
+
+5. KEY CHALLENGE FACED
+A major challenge was encountered during peak hour analysis. Although an Order_Time column was present, all values were recorded as 00:00:00. This resulted in the absence of time variation, making it impossible to perform meaningful peak hour or hourly demand analysis. Therefore, the analysis was adjusted to focus on date-level trends instead.
+
